@@ -6,6 +6,8 @@ import {Owned} from "solmate/auth/Owned.sol";
 import {SoulBound1155} from "./SoulBound1155.sol";
 
 contract ProofOfHacker is SoulBound1155, Owned {
+    string constant public name = "Proof Of Hacker";
+    string constant public symbol = "POH";
     string public contractURI;
 
     mapping(address => bool) public minters;
